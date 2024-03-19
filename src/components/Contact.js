@@ -57,12 +57,14 @@ function Contact() {
                   aria-label="email"
                   placeholder="email"
                 />
-              </FormGroup>
-              <Form.Group controlId="exampleForm.ControlTextarea1">
-                <Form.Label>Message</Form.Label>
-                <Form.Control name="message" aria-label="email" className="mb-3" as="textarea" />
-              </Form.Group>
 
+                <Form.Control
+                  name="message"
+                  aria-label="message"
+                  className="mb-3"
+                  as="textarea"
+                />
+              </FormGroup>
               <Button type="submit">Submit</Button>
             </Form>
           </Col>
