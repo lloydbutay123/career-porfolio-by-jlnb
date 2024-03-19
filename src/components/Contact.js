@@ -60,7 +60,7 @@ function Contact() {
               </FormGroup>
               <Form.Group controlId="exampleForm.ControlTextarea1">
                 <Form.Label>Message</Form.Label>
-                <Form.Control className="mb-3" as="textarea" />
+                <Form.Control name="message" aria-label="email" className="mb-3" as="textarea" />
               </Form.Group>
 
               <Button type="submit">Submit</Button>
