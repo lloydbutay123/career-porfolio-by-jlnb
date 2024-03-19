@@ -86,7 +86,7 @@ function Banner() {
               </p>
 
               <Link to="/about">
-                <button>
+                <button className="viewButton">
                   See more about me <ArrowRight size={25} />
                 </button>
               </Link>

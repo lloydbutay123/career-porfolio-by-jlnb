@@ -21,7 +21,7 @@ function About() {
         })}
 
         <Link to="/services">
-                <button>
+                <button className="viewButton">
                   View more at services <ArrowRight size={25} />
                 </button>
               </Link>

@@ -1,20 +1,19 @@
-@font-face {
-  font-family: centra-bold;
-  src: url(./assets/fonts/centra-font-family-1710237944-0/CentraNo2-Bold-BF646c26904e7ce.ttf);
-}
-@font-face {
-  font-family: centra-medium;
-  src: url(./assets/fonts/centra-font-family-1710237944-0/CentraNo2-Medium-BF646c26901ce01.ttf);
-}
+/* TYPOGRAPHY */
 @font-face {
   font-family: centra-book;
   src: url(./assets/fonts/centra-font-family-1710237944-0/CentraNo2-Book-BF646c2690591ba.ttf);
 }
 
+/* GENERAL STYLES */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+span {
+  color: #61677A;
 }
 
 html {
@@ -24,7 +23,6 @@ html {
 body {
   min-height: 100vh;
   position: relative;
-  /* background-image: url(./assets/background_images/outer-space-and-galaxies-infographics-images-1.jpg); */
   background-repeat: no-repeat;
   background-size: cover;
   font-weight: 400;
@@ -42,12 +40,14 @@ h5,
 h6 {
   margin: 0;
   padding: 0;
-  line-height: normal;
+  line-height: 1;
 }
 
 p {
   font-size: 16px;
 }
+
+/* HEADER AND MAIN NAVIGATION */
 
 header {
   display: flex;
@@ -74,7 +74,7 @@ nav a::after {
   left: 0;
   width: 0;
   height: 5px;
-  background-color: blue;
+  background-color: #61677A;
 }
 
 nav a:hover::after {
@@ -104,6 +104,8 @@ header img {
   width: 70px;
 }
 
+/* SOCIAL ICONS */
+
 .social-icon {
   display: inline-block;
   padding: 16px 0;
@@ -124,12 +126,13 @@ header img {
   margin-right: 20px;
   align-items: center;
   justify-content: center;
-  line-height: 1;
 }
 .social-icon a svg {
   color: #fff;
   font-size: 20px;
 }
+
+/* MAIN PAGE */
 
 .banner {
   display: flex;
@@ -156,7 +159,6 @@ header img {
   font-size: 35px;
   font-weight: 700;
   letter-spacing: 0.8px;
-  line-height: 1;
   margin-bottom: 20px;
   display: block;
   text-transform: uppercase;
@@ -170,47 +172,8 @@ header img {
   margin-bottom: 30px;
 }
 
-.banner button {
-  color: #fff;
-  font-weight: 700;
-  font-size: 15px;
-  letter-spacing: 0.8px;
-  display: flex;
-  align-items: center;
-  border: none;
-  background: none;
-  position: relative;
-  margin-bottom: 16px;
-}
-
-.banner button::after {
-  content: "";
-  position: absolute;
-  bottom: -10px;
-  left: 0;
-  width: 0;
-  height: 5px;
-  background-color: blue;
-}
-
-.banner button:hover::after {
-  width: 100%;
-  transition: 0.3s;
-}
-
-.banner button svg {
-  font-size: 25px;
-  margin-left: 2rem;
-  line-height: 1;
-  animation: slide 1s infinite;
-}
-
 .banner a {
   text-decoration: none;
-}
-
-.banner button:hover svg {
-  margin-left: 25px;
 }
 
 .blink {
@@ -252,6 +215,8 @@ header img {
   transform: scale(1.5);
 }
 
+/* ABOUT PAGE */
+
 .aboutMe {
   min-height: 100vh;
   padding-top: 64px;
@@ -261,6 +226,21 @@ header img {
   font-weight: bolder;
   font-size: 50px;
 }
+
+.aboutMe h1::after {
+  background-color: #61677A;
+  content: "";
+  display: inline-block;
+  height: 10px;
+  position: relative;
+  width: 20%;
+}
+
+.aboutMe h1::after {
+  left: 10px;
+  margin-right: -50%;
+}
+
 
 .content {
   height: 15rem;
@@ -275,6 +255,12 @@ header img {
   font-size: 80px;
 }
 
+.education {
+  margin-bottom: 5rem;
+}
+
+/* SERVICES PAGE */
+
 .services {
   min-height: 100vh;
   width: 100%;
@@ -283,6 +269,8 @@ header img {
 .services h1 {
   margin-bottom: 3rem;
 }
+
+/* PROJECT PAGE */
 
 .projects {
   width: 100%;
@@ -303,12 +291,11 @@ header img {
 
 .projects h1 {
   font-size: 100px;
-  line-height: 1;
   margin: 0;
 }
 
 .projects h1::after {
-  background-color: white;
+  background-color: #61677A;
   content: "";
   display: inline-block;
   height: 10px;
@@ -324,6 +311,8 @@ header img {
 .projectList span {
   color: #282c34;
 }
+
+/* SCROLLDOWN BUTTON IN PAGES */
 
 .scrollDown {
   height: 50px;
@@ -374,7 +363,7 @@ header img {
   position: absolute;
   width: 100px;
   height: 5px;
-  background-color: white;
+  background-color: #61677A;
   bottom: 0;
   left: 0;
 }
@@ -402,7 +391,9 @@ header img {
   top: 35%;
 }
 
-.projectsList button {
+/* VIEW / SLIDE TO NEXT BUTTON */
+
+.viewButton {
   color: #fff;
   font-weight: 700;
   font-size: 15px;
@@ -413,37 +404,37 @@ header img {
   border: none;
   background: none;
   position: relative;
-  margin-bottom: 5rem;
+  margin-bottom: 2rem;
 }
 
-.projectsList button::after {
+.viewButton::after {
   content: "";
   position: absolute;
   bottom: -10px;
   left: 0;
   width: 0;
   height: 5px;
-  background-color: blue;
+  background-color: #61677A;
 }
 
-.projectsList button:hover::after {
+.viewButton:hover::after {
   width: 100%;
   transition: 0.3s;
 }
 
-.projectsList button svg {
+.viewButton svg {
   font-size: 25px;
   margin-left: 2rem;
   line-height: 1;
   animation: slide 1s infinite;
 }
 
+/* SKILLS PAGE */
+
 .skills {
   width: 100%;
   min-height: 100vh;
   display: grid;
-  place-items: center;
-  margin-top: 5rem;
 }
 
 .skills .skillsCategories {
@@ -452,19 +443,18 @@ header img {
   grid-template-columns: repeat(12, 1fr);
 }
 .grid-item {
-  padding: 20px;
   font-size: 50px;
   text-align: center;
 }
 
 .skills h1 {
   font-size: 90px;
-  line-height: 1;
 }
 
 .skills .skillsTitle {
   width: 100%;
   display: inline-block;
+  margin-bottom: 5rem;
 }
 
 .skills .skillsTitle h1 span {
@@ -478,6 +468,8 @@ header img {
   bottom: 0;
 }
 
+/* CONTACT PAGE */
+
 .contact {
   min-height: 100vh;
   width: 100%;
@@ -486,7 +478,6 @@ header img {
 .contact h1 {
   font-size: 70px;
   margin: 0;
-  line-height: 1;
 }
 
 .parent {
@@ -520,8 +511,8 @@ header img {
 }
 
 .formSubmit h1 {
-  font-size: 120px;
-  line-height: 1;
+  font-size: 80px;
+  margin-bottom: 2rem;
 }
 
 .formSubmit button,
@@ -535,70 +526,13 @@ header img {
   border-radius: 0;
 }
 
-.education {
-  margin-bottom: 5rem;
-}
-
-.aboutMe h1 {
-  line-height: 1;
-  margin: 0;
-}
-
-.aboutMe h1::after {
-  background-color: white;
-  content: "";
-  display: inline-block;
-  height: 10px;
-  position: relative;
-  width: 20%;
-}
-
-.aboutMe h1::after {
-  left: 10px;
-  margin-right: -50%;
-}
-
-.aboutMe button {
-  color: #fff;
-  font-weight: 700;
-  font-size: 15px;
-  letter-spacing: 0.8px;
-  display: flex;
-  float: right;
-  align-items: center;
-  border: none;
-  background: none;
-  position: relative;
-  margin-bottom: 5rem;
-}
-
-.aboutMe button::after {
-  content: "";
-  position: absolute;
-  bottom: -10px;
-  left: 0;
-  width: 0;
-  height: 5px;
-  background-color: blue;
-}
-
-.aboutMe button:hover::after {
-  width: 100%;
-  transition: 0.3s;
-}
-
-.aboutMe button svg {
-  font-size: 25px;
-  margin-left: 2rem;
-  line-height: 1;
-  animation: slide 1s infinite;
-}
 
 footer {
   display: inline-block;
   align-items: center;
 }
 
+/* TRANSITION EFFECTS ON PAGES */
 
 .slide-in {
   position: fixed;
@@ -619,7 +553,6 @@ footer {
   background-color: #0f0f0f;
   transform-origin: left;
 }
-
 
 
 @keyframes scrollDown {
@@ -726,7 +659,6 @@ footer {
   }
   .contact h1 {
     font-size: 55px;
-    line-height: 1;
   }
 
   .formSubmit h1 {
@@ -734,8 +666,6 @@ footer {
   }
 
   .aboutMe h1 {
-    line-height: 1;
-    margin: 0;
     font-size: 30px;
   }
 }

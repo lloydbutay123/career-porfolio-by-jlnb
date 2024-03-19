@@ -2,6 +2,8 @@ import { Col, Container, Row } from "react-bootstrap";
 import ServicesList from "../Helper/Services";
 import Skills from "../Helper/Skills";
 import Transition from "./Transition";
+import { Link } from "react-router-dom";
+import { ArrowRight } from "react-bootstrap-icons";
 
 function Services() {
   return (
@@ -14,7 +16,7 @@ function Services() {
               return (
                 <Col sm={12} lg={4}>
                   <div className="content" key={service.id}>
-                    <h2>{service.id}</h2>
+                    <h2><span>{service.id}</span></h2>
                     <h3>{service.title}</h3>
                     <p>{service.text}</p>
                   </div>
@@ -37,6 +39,12 @@ function Services() {
             return <div className="grid-item">{skill.icon}</div>;
           })}
         </div>
+
+        <Link to="/resume">
+                <button className="viewButton">
+                  View my Resume <ArrowRight size={25} />
+                </button>
+              </Link>
       </section>
     </Container>
   );

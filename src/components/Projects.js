@@ -28,7 +28,9 @@ function Projects() {
                       <div className="projectList">
                         <h1>0{project.id}</h1>
                         <h2>{project.title}</h2>
-                        <p>{project.text} <span>{project.date}</span></p>
+                        <p>
+                          {project.text} <span>{project.date}</span>
+                        </p>
                       </div>
                     </Col>
                     <Col lg={6}>
@@ -46,10 +48,10 @@ function Projects() {
               })}
             </Row>
             <Link to="/resume">
-                <button>
-                  View my Resume <ArrowRight size={25} />
-                </button>
-              </Link>
+              <button className="viewButton">
+                View my Resume <ArrowRight size={25} />
+              </button>
+            </Link>
           </div>
         </Container>
       </section>

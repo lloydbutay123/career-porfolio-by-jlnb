@@ -1,8 +1,15 @@
-import { Button, Col, Container, FormGroup, Row } from "react-bootstrap";
-import { ArrowUpRight } from "react-bootstrap-icons";
+import {
+  Button,
+  Col,
+  Container,
+  Row,
+} from "react-bootstrap";
+import ContactUs from "./SendEmail";
+import { ArrowUpRight, GeoAltFill } from "react-bootstrap-icons";
 import Form from "react-bootstrap/Form";
 import Footer from "../components/Footer";
 import Transition from "./Transition";
+import { FaMailBulk, FaPhone } from "react-icons/fa";
 
 function Contact() {
   return (
@@ -30,44 +37,20 @@ function Contact() {
       <section className="formSubmit" id="formSubmit">
         <Row className="formRow">
           <Col lg={8}>
-            <h1>GET IN TOUCH</h1>
-          </Col>
-          <Col lg={4}>
-            <Form
-              method="POST"
-              action="https://formsubmit.co/johnlloydbutay123@gmail.com"
-            >
-              <FormGroup>
-                <Form.Control
-                  className="mb-3"
-                  name="fName"
-                  aria-label="First name"
-                  placeholder="First Name"
-                />
-                <Form.Control
-                  className="mb-3"
-                  name="lName"
-                  aria-label="Last name"
-                  placeholder="Last Name"
-                />
-
-                <Form.Control
-                  className="mb-3"
-                  name="email"
-                  aria-label="email"
-                  placeholder="email"
-                />
-
-                <Form.Control
-                  name="message"
-                  aria-label="message"
-                  className="mb-3"
-                  as="textarea"
-                />
-              </FormGroup>
-              <Button type="submit">Submit</Button>
-            </Form>
-          </Col>
+          <h1>GET IN TOUCH</h1>
+          <Row>
+            <Col lg={6}>
+            <h2>Philippines</h2>
+            <p><span><GeoAltFill /> </span>#14 Bungon, City of Batac Ilocos Norte Philippines, 2906</p>
+            </Col>
+            <Col lg={6}>
+            <h2>Contact Info</h2>
+            <p><span><FaPhone /> </span>09567223090</p>
+            <p><span><FaMailBulk /> </span>johnlloydbutay123@gmail.com</p>
+            </Col>
+          </Row>
+          </Col> 
+          <ContactUs />
         </Row>
         <Footer />
       </section>
