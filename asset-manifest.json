@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/career-porfolio-by-jlnb/static/css/main.c94c5af4.css",
-    "main.js": "/career-porfolio-by-jlnb/static/js/main.9254649e.js",
+    "main.js": "/career-porfolio-by-jlnb/static/js/main.bf50d08a.js",
     "static/js/453.acca0757.chunk.js": "/career-porfolio-by-jlnb/static/js/453.acca0757.chunk.js",
     "static/media/6050a8e5-32c1-4f37-bb6d-dc6f954b7aeb.png": "/career-porfolio-by-jlnb/static/media/6050a8e5-32c1-4f37-bb6d-dc6f954b7aeb.dc76ed826a87b7914f3b.png",
     "static/media/CentraNo2-Book-BF646c2690591ba.ttf": "/career-porfolio-by-jlnb/static/media/CentraNo2-Book-BF646c2690591ba.72c0fe58795586249b47.ttf",
@@ -9,11 +9,11 @@
     "static/media/CentraNo2-Bold-BF646c26904e7ce.ttf": "/career-porfolio-by-jlnb/static/media/CentraNo2-Bold-BF646c26904e7ce.b61fc644acf0c61b7549.ttf",
     "index.html": "/career-porfolio-by-jlnb/index.html",
     "main.c94c5af4.css.map": "/career-porfolio-by-jlnb/static/css/main.c94c5af4.css.map",
-    "main.9254649e.js.map": "/career-porfolio-by-jlnb/static/js/main.9254649e.js.map",
+    "main.bf50d08a.js.map": "/career-porfolio-by-jlnb/static/js/main.bf50d08a.js.map",
     "453.acca0757.chunk.js.map": "/career-porfolio-by-jlnb/static/js/453.acca0757.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c94c5af4.css",
-    "static/js/main.9254649e.js"
+    "static/js/main.bf50d08a.js"
   ]
 }
