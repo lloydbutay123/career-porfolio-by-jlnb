@@ -5,6 +5,10 @@ import { Navigate } from "react-router-dom";
 import { ArrowRight } from "react-bootstrap-icons";
 import { Link } from "react-router-dom";
 import Socials from "./Socials";
+import Transition from "./Transition";
+
+
+
 function Banner() {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
@@ -95,4 +99,4 @@ function Banner() {
   );
 }
 
-export default Banner;
+export default Transition(Banner);

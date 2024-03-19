@@ -1,6 +1,7 @@
 import { Col, Container, Row } from "react-bootstrap";
 import ServicesList from "../Helper/Services";
 import Skills from "../Helper/Skills";
+import Transition from "./Transition";
 
 function Services() {
   return (
@@ -41,4 +42,4 @@ function Services() {
   );
 }
 
-export default Services;
+export default Transition(Services);

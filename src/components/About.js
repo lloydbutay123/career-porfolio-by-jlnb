@@ -1,5 +1,8 @@
-import { Col, Container, Row } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import Education from "../Helper/Education";
+import Transition from "./Transition";
+import { Link } from "react-router-dom";
+import { ArrowRight } from "react-bootstrap-icons";
 
 function About() {
   return (
@@ -16,9 +19,15 @@ function About() {
             </div>
           );
         })}
+
+        <Link to="/services">
+                <button>
+                  View more at services <ArrowRight size={25} />
+                </button>
+              </Link>
       </Container>
     </section>
   );
 }
 
-export default About;
+export default Transition(About);

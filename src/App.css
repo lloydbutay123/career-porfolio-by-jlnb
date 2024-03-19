@@ -558,9 +558,66 @@ header img {
   margin-right: -50%;
 }
 
+.aboutMe button {
+  color: #fff;
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 0.8px;
+  display: flex;
+  float: right;
+  align-items: center;
+  border: none;
+  background: none;
+  position: relative;
+  margin-bottom: 5rem;
+}
+
+.aboutMe button::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 0;
+  height: 5px;
+  background-color: blue;
+}
+
+.aboutMe button:hover::after {
+  width: 100%;
+  transition: 0.3s;
+}
+
+.aboutMe button svg {
+  font-size: 25px;
+  margin-left: 2rem;
+  line-height: 1;
+  animation: slide 1s infinite;
+}
+
 footer {
   display: inline-block;
   align-items: center;
+}
+
+
+.slide-in {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #0f0f0f;
+  transform-origin: right;
+}
+
+.slide-out {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #0f0f0f;
+  transform-origin: left;
 }
 
 

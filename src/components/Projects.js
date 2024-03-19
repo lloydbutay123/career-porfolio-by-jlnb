@@ -2,6 +2,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import ProjectLists from "../Helper/Projects";
 import { ArrowRight } from "react-bootstrap-icons";
 import { Link } from "react-router-dom";
+import Transition from "./Transition";
 
 function Projects() {
   return (
@@ -56,4 +57,4 @@ function Projects() {
   );
 }
 
-export default Projects;
+export default Transition(Projects);

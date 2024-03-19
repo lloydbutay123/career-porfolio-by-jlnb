@@ -5,24 +5,30 @@ import {
   BrowserRouter as Router,
   Routes,
   Route,
+  useLocation
 } from "react-router-dom";
 import Banner from "./components/Banner";
 import About from "./components/About";
 import Services from "./components/Services";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
+import { AnimatePresence } from "framer-motion";
 
 function App() {
+  const location = useLocation();
   return (
     <div className="App">
       <NavBar />
-      <Routes>
+      <AnimatePresence mode="wait">
+      <Routes location={location} key={location.pathname}>
         <Route path="/" element={<Banner />}></Route>
         <Route path="/about" element={<About />}></Route>
         <Route path="/services" element={<Services />}></Route>
         <Route path="/projects" element={<Projects />}></Route>
         <Route path="/contact" element={<Contact />}></Route>
       </Routes>
+
+      </AnimatePresence>
     </div>
   );
 }

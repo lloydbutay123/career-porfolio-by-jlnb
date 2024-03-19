@@ -1,8 +1,8 @@
 import { Button, Col, Container, FormGroup, Row } from "react-bootstrap";
 import { ArrowUpRight } from "react-bootstrap-icons";
 import Form from "react-bootstrap/Form";
-import InputGroup from "react-bootstrap/InputGroup";
 import Footer from "../components/Footer";
+import Transition from "./Transition";
 
 function Contact() {
   return (
@@ -75,4 +75,4 @@ function Contact() {
   );
 }
 
-export default Contact;
+export default Transition(Contact);
