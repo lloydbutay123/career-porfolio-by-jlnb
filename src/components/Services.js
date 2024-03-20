@@ -1,22 +1,29 @@
+import { useEffect } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import ServicesList from "../Helper/Services";
 import Skills from "../Helper/Skills";
 import Transition from "./Transition";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { ArrowRight } from "react-bootstrap-icons";
 
 function Services() {
+  const location = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
   return (
     <Container>
       <section className="services" id="services">
         <div className="block productCategories">
-          <h1>I can help you with ...</h1>
+          <h2>I can help you with ...</h2>
           <Row>
             {ServicesList.map((service) => {
               return (
                 <Col sm={12} lg={4}>
                   <div className="content" key={service.id}>
-                    <h2><span>{service.id}</span></h2>
+                    <h2>
+                      <span>{service.id}</span>
+                    </h2>
                     <h3>{service.title}</h3>
                     <p>{service.text}</p>
                   </div>
@@ -40,11 +47,11 @@ function Services() {
           })}
         </div>
 
-        <Link to="/resume">
-                <button className="viewButton">
-                  View my Resume <ArrowRight size={25} />
-                </button>
-              </Link>
+        <Link to="/projects">
+          <button className="viewButton">
+            View my Resume <ArrowRight size={25} />
+          </button>
+        </Link>
       </section>
     </Container>
   );

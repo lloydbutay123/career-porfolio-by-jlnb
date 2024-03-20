@@ -31,9 +31,6 @@ function NavBar() {
           <Link as={Link} to="/projects" onClick={showNavbar}>
             Projects
           </Link>
-          <Link as={Link} to="/resume" onClick={showNavbar}>
-            Resume
-          </Link>
           <Link as={Link} to="/contact" onClick={showNavbar}>
             Contact
           </Link>

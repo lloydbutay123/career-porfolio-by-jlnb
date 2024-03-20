@@ -1,10 +1,15 @@
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectLists from "../Helper/Projects";
 import { ArrowRight } from "react-bootstrap-icons";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import Transition from "./Transition";
+import { useEffect } from "react";
 
 function Projects() {
+  const location = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
   return (
     <Container>
       <section className="projects" id="projects">
@@ -20,7 +25,7 @@ function Projects() {
       <section className="projectsList" id="projectsList">
         <Container>
           <div>
-            <Row gutter={24}>
+            <Row gutter={24} >
               {ProjectLists.map((project) => {
                 return (
                   <>
@@ -47,9 +52,9 @@ function Projects() {
                 );
               })}
             </Row>
-            <Link to="/resume">
+            <Link to="/contact">
               <button className="viewButton">
-                View my Resume <ArrowRight size={25} />
+                Contact Me <ArrowRight size={25} />
               </button>
             </Link>
           </div>

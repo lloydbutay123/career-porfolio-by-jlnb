@@ -13,7 +13,7 @@
 }
 
 span {
-  color: #61677A;
+  color: #61677a;
 }
 
 html {
@@ -25,10 +25,8 @@ body {
   position: relative;
   background-repeat: no-repeat;
   background-size: cover;
-  font-weight: 400;
   background-color: black !important;
   color: #ffff !important;
-  background-attachment: fixed;
   font-family: "centra-book", sans-serif !important;
 }
 
@@ -41,10 +39,16 @@ h6 {
   margin: 0;
   padding: 0;
   line-height: 1;
+  font-weight: bold;
 }
 
 p {
   font-size: 16px;
+}
+
+section h1 {
+  font-size: 90px;
+  font-weight: 900;
 }
 
 /* HEADER AND MAIN NAVIGATION */
@@ -74,7 +78,7 @@ nav a::after {
   left: 0;
   width: 0;
   height: 5px;
-  background-color: #61677A;
+  background-color: #61677a;
 }
 
 nav a:hover::after {
@@ -141,23 +145,9 @@ header img {
   width: 100%;
 }
 
-.banner .tagline {
-  font-weight: 700;
-  letter-spacing: 0.8px;
-  padding: 8px 10px;
-  background: linear-gradient(
-    90.21deg,
-    rgba(170, 54, 124, 0.5) -5.91%,
-    rgba(74, 47, 189, 0.5) 111.58%
-  );
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  font-size: 20px;
-  margin-bottom: 16px;
-  display: inline-block;
-}
-.banner h1 {
+.banner h2 {
   font-size: 35px;
-  font-weight: 700;
+  font-weight: 900;
   letter-spacing: 0.8px;
   margin-bottom: 20px;
   display: block;
@@ -172,16 +162,12 @@ header img {
   margin-bottom: 30px;
 }
 
-.banner a {
-  text-decoration: none;
-}
-
 .blink {
   animation: blink-animation 1s infinite;
 }
 
 .banner .bannerLinks a {
-  font-weight: 700;
+  font-weight: 900;
   text-decoration: none;
   color: #fff;
   position: relative;
@@ -222,13 +208,8 @@ header img {
   padding-top: 64px;
 }
 
-.aboutMe h1 {
-  font-weight: bolder;
-  font-size: 50px;
-}
-
 .aboutMe h1::after {
-  background-color: #61677A;
+  background-color: #61677a;
   content: "";
   display: inline-block;
   height: 10px;
@@ -240,19 +221,8 @@ header img {
   left: 10px;
   margin-right: -50%;
 }
-
-
-.content {
-  height: 15rem;
-  padding-left: 1rem;
-  width: 100%;
-  border-left: 2px solid white;
-}
-
-.content h2 {
-  color: #282c34;
-  font-weight: 700;
-  font-size: 80px;
+.aboutMe .title {
+  margin-bottom: 3rem;
 }
 
 .education {
@@ -268,6 +238,19 @@ header img {
 
 .services h1 {
   margin-bottom: 3rem;
+}
+
+.content {
+  height: 15rem;
+  padding-left: 1rem;
+  width: 100%;
+  border-left: 2px solid white;
+  margin-bottom: 2rem;
+}
+
+.content h2 {
+  font-size: 80px;
+  font-weight: 900;
 }
 
 /* PROJECT PAGE */
@@ -289,13 +272,8 @@ header img {
   text-align: center;
 }
 
-.projects h1 {
-  font-size: 100px;
-  margin: 0;
-}
-
 .projects h1::after {
-  background-color: #61677A;
+  background-color: #61677a;
   content: "";
   display: inline-block;
   height: 10px;
@@ -352,7 +330,7 @@ header img {
 
 .projectList h2 {
   font-size: 50px;
-  font-weight: 700;
+  font-weight: 900;
 }
 .projectList h1 {
   position: relative;
@@ -363,7 +341,7 @@ header img {
   position: absolute;
   width: 100px;
   height: 5px;
-  background-color: #61677A;
+  background-color: #61677a;
   bottom: 0;
   left: 0;
 }
@@ -395,11 +373,12 @@ header img {
 
 .viewButton {
   color: #fff;
-  font-weight: 700;
+  font-weight: 900;
   font-size: 15px;
   letter-spacing: 0.8px;
   display: flex;
   float: right;
+  right: 2rem;
   align-items: center;
   border: none;
   background: none;
@@ -414,7 +393,7 @@ header img {
   left: 0;
   width: 0;
   height: 5px;
-  background-color: #61677A;
+  background-color: #61677a;
 }
 
 .viewButton:hover::after {
@@ -447,9 +426,6 @@ header img {
   text-align: center;
 }
 
-.skills h1 {
-  font-size: 90px;
-}
 
 .skills .skillsTitle {
   width: 100%;
@@ -475,9 +451,8 @@ header img {
   width: 100%;
 }
 
-.contact h1 {
+.contact h2 {
   font-size: 70px;
-  margin: 0;
 }
 
 .parent {
@@ -503,21 +478,16 @@ header img {
   width: 100%;
   min-height: 100vh;
 }
-
-.formSubmit .formRow {
-  display: flex;
-  align-items: center;
-  min-height: 100vh;
+.contactDetails {
+  text-align: start;
 }
 
 .formSubmit h1 {
-  font-size: 80px;
   margin-bottom: 2rem;
+  text-align: center;
 }
 
-.formSubmit button,
-.formSubmit input,
-.formSubmit textarea {
+.formSubmit button {
   border: none;
   background-color: white;
   color: black;
@@ -526,10 +496,34 @@ header img {
   border-radius: 0;
 }
 
+.formSubmit input,
+.formSubmit textarea {
+  background: none;
+  padding: 1rem;
+  border-radius: 0;
+  border: none;
+  outline: none;
+  color: #fff;
+  border-bottom: 3px solid #61677a;
+}
+.formSubmit input::placeholder,
+.formSubmit textarea::placeholder {
+  color: #fff;
+}
+.formSubmit input:focus,
+.formSubmit textarea:focus {
+  box-shadow: none;
+  border: none;
+  background: transparent;
+  color: #fff;
+}
 
 footer {
+  width: 100%;
   display: inline-block;
   align-items: center;
+  border-top: 2px solid #61677a;
+  margin-top: 3rem;
 }
 
 /* TRANSITION EFFECTS ON PAGES */
@@ -554,6 +548,22 @@ footer {
   transform-origin: left;
 }
 
+.thankyouMessage {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.thankyouMessage .btn {
+  border: none;
+  border-radius: 0;
+  background: white;
+  color: black;
+
+}
 
 @keyframes scrollDown {
   0% {
@@ -634,17 +644,18 @@ footer {
 }
 
 @media screen and (max-width: 568px) {
-  .projects h1 {
-    overflow: hidden;
-    font-size: 50px;
+
+  section h1 {
+    font-size: 40px;
+  }
+
+  section .parent h2 {
+    font-size: 30px;
   }
   .skills .skillsCategories {
     display: grid;
     width: 100%;
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .skills h1 {
-    font-size: 40px;
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .skills .skillsTitle h1 span {
@@ -656,16 +667,5 @@ footer {
     font-size: 10px;
     left: 0;
     bottom: 0;
-  }
-  .contact h1 {
-    font-size: 55px;
-  }
-
-  .formSubmit h1 {
-    font-size: 40px;
-  }
-
-  .aboutMe h1 {
-    font-size: 30px;
   }
 }

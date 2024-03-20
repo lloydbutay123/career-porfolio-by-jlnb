@@ -1,17 +1,15 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import { Navigate } from "react-router-dom";
 import { ArrowRight } from "react-bootstrap-icons";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import Socials from "./Socials";
 import Transition from "./Transition";
-
-
 
 function Banner() {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
+
   const toRotate = [
     "Software Engineer",
     "Web Developer",
@@ -58,10 +56,10 @@ function Banner() {
         <Row>
           <Col lg={12}>
             <div className="sectionContent">
-              <h1>
+              <h2>
                 I'M {"John Lloyd Butay, "} <span className="wrap">{text}</span>
                 <span className="blink">|</span>
-              </h1>
+              </h2>
               <p>
                 Your friendly neighborhood frontend developer, web developer,
                 and Software Engineer. I spend my days (and often nights)
