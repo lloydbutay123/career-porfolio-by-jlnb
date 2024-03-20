@@ -21,7 +21,7 @@ function App() {
     <div className="App">
       <NavBar />
       <AnimatePresence mode="wait">
-      <Routes location={location} key={location.pathname}>
+      <Routes location={location} key={location.pathname} basename="/career-porfolio-by-jlnb">
         <Route path="/" element={<Banner />}></Route>
         <Route path="/about" element={<About />}></Route>
         <Route path="/services" element={<Services />}></Route>
