@@ -53,44 +53,41 @@ function Banner() {
   return (
     <section className="banner" id="banner">
       <Container>
-        <Row>
-          <Col lg={12}>
-            <div className="sectionContent">
-              <h2>
-                I'M {"John Lloyd Butay, "} <span className="wrap">{text}</span>
-                <span className="blink">|</span>
-              </h2>
-              <p>
-                Your friendly neighborhood frontend developer, web developer,
-                and Software Engineer. I spend my days (and often nights)
-                painting the Internet canvas with{" "}
-                <span className="bannerLinks">
-                  <Link to="/projects">PROJECTS</Link>
-                </span>{" "}
-                and lines of code, turning zeroes and ones into immersive,
-                interactive experiences,
-              </p>
+        <div className="sectionContent">
+          <h2>
+            I'M {"John Lloyd Butay, "} <span className="wrap">{text}</span>
+            <span className="blink">|</span>
+          </h2>
+          <p>
+            Your friendly neighborhood frontend developer, web developer, and
+            Software Engineer. I spend my days (and often nights) painting the
+            Internet canvas with{" "}
+            <span className="bannerLinks">
+              <Link to="/projects">PROJECTS</Link>
+            </span>{" "}
+            and lines of code, turning zeroes and ones into immersive,
+            interactive experiences,
+          </p>
 
-              <p>
-                Bona fide photochromic LENS enthusiast - sunlight or indoors,
-                I've got it covered. I tread the path of minimalism, finding
-                beauty in simplicity and order. When I'm not crafting beautiful
-                web experiences, you can find me reading ARTICLES or swaying to
-                the rhythm of Pop Music & Jazz, losing myself in the captivating
-                flow of melodies. Anyways you can{" "}
-                <span className="bannerLinks">
-                  <Link to="/contact">CONTACT ME</Link>
-                </span>
-              </p>
+          <p>
+            Bona fide photochromic LENS enthusiast - sunlight or indoors, I've
+            got it covered. I tread the path of minimalism, finding beauty in
+            simplicity and order. When I'm not crafting beautiful web
+            experiences, you can find me reading ARTICLES or swaying to the
+            rhythm of Pop Music & Jazz, losing myself in the captivating flow of
+            melodies. Anyways you can{" "}
+            <span className="bannerLinks">
+              <Link to="/contact">CONTACT ME</Link>
+            </span>
+          </p>
 
-              <Link to="/about">
-                <button className="viewButton">
-                  See more about me <ArrowRight size={25} />
-                </button>
-              </Link>
-            </div>
-          </Col>
-        </Row>
+          <Link to="/about">
+            <button className="viewButton">
+              See more about me <ArrowRight size={25} />
+            </button>
+          </Link>
+        </div>
+
         <Socials />
       </Container>
     </section>

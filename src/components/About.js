@@ -46,7 +46,7 @@ function About() {
         })}
 
         <div className="title">
-          <h1>Trainings & Certificates</h1>
+          <h1>Certificates</h1>
         </div>
         {Trainings.map((training) => {
           return (

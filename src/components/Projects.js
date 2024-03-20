@@ -29,7 +29,7 @@ function Projects() {
               {ProjectLists.map((project) => {
                 return (
                   <>
-                    <Col lg={6}>
+                    <Col lg={6} className="mb-5">
                       <div className="projectList">
                         <h1>0{project.id}</h1>
                         <h2>{project.title}</h2>

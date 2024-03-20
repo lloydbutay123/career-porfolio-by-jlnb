@@ -1,8 +1,9 @@
 import { Button, Col, Container, Row } from "react-bootstrap";
 import ContactUs from "./SendEmail";
-import { ArrowUpRight, TypeH2 } from "react-bootstrap-icons";
+import { ArrowUpRight } from "react-bootstrap-icons";
 import Footer from "../components/Footer";
 import Transition from "./Transition";
+import logo from "../assets/logo/img-logo.png";
 
 function Contact() {
   return (
@@ -10,7 +11,7 @@ function Contact() {
       <section className="contact" id="contact">
         <div className="parent">
           <div className="left">
-            <h2>
+            <h2><span><img src={logo} /></span>
               Let’s talk about a project, collaboration or an idea you may have
             </h2>
           </div>

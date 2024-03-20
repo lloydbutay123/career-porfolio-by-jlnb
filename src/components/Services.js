@@ -49,7 +49,7 @@ function Services() {
 
         <Link to="/projects">
           <button className="viewButton">
-            View my Resume <ArrowRight size={25} />
+            View my Projects <ArrowRight size={25} />
           </button>
         </Link>
       </section>

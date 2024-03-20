@@ -16,7 +16,7 @@ function NavBar() {
     <Container>
       <header>
         <Link as={Link} to="/">
-          <img src={mainLogo} onClick={showNavbar} />
+          <img src={mainLogo} />
         </Link>
         <nav ref={navRef}>
           <Link as={Link} to="/" onClick={showNavbar}>

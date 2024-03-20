@@ -526,6 +526,10 @@ footer {
   margin-top: 3rem;
 }
 
+.contact .parent .left img{
+  width: 100px;
+}
+
 /* TRANSITION EFFECTS ON PAGES */
 
 .slide-in {
