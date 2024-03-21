@@ -22,7 +22,7 @@ function App() {
       <NavBar />
       <AnimatePresence mode="wait">
       <Routes location={location} key={location.pathname}>
-        <Route path="/" element={<Banner />} basename="/career-porfolio-by-jlnb"></Route>
+        <Route path="/" element={<Banner />}></Route>
         <Route path="/about" element={<About />}></Route>
         <Route path="/services" element={<Services />}></Route>
         <Route path="/projects" element={<Projects />}></Route>
@@ -30,7 +30,7 @@ function App() {
         <Route path="/thankyou" element={<ThankyouMessage />}></Route>
       </Routes>
       </AnimatePresence>
-    </div>
+    </div> 
   );
 }
 
